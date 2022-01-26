@@ -1,0 +1,2 @@
+For bpmn modelling you need Camunda Modeler
+For deploying and using Cockpit, Tasklist you need camunda-bpm-run-7.16.0 or other verison
