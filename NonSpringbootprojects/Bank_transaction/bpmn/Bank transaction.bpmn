@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0iqz21e" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.11.1" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.15.0">
+  <bpmn:process id="Bank_transaction" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_0hqv7qv</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="Flow_0hqv7qv" sourceRef="StartEvent_1" targetRef="Activity_0pih2vw" />
+    <bpmn:sequenceFlow id="Flow_1yumj0r" sourceRef="Activity_0pih2vw" targetRef="Activity_07e3c3d" />
+    <bpmn:sequenceFlow id="Flow_10x4iic" sourceRef="Activity_07e3c3d" targetRef="Activity_1313pj3" />
+    <bpmn:endEvent id="Event_1j491a7">
+      <bpmn:incoming>Flow_02afr0i</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_02afr0i" sourceRef="Activity_1313pj3" targetRef="Event_1j491a7" />
+    <bpmn:userTask id="Activity_0pih2vw" name="Go to Bank with our card" camunda:formKey="camunda-forms:deployment:Bank_step1.form">
+      <bpmn:incoming>Flow_0hqv7qv</bpmn:incoming>
+      <bpmn:outgoing>Flow_1yumj0r</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Activity_07e3c3d" name="Withdraw some money" camunda:formKey="camunda-forms:deployment:Bank_step2.form">
+      <bpmn:incoming>Flow_1yumj0r</bpmn:incoming>
+      <bpmn:outgoing>Flow_10x4iic</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Activity_1313pj3" name="Go shopping" camunda:formKey="camunda-forms:deployment:Bank_step3.form">
+      <bpmn:incoming>Flow_10x4iic</bpmn:incoming>
+      <bpmn:outgoing>Flow_02afr0i</bpmn:outgoing>
+    </bpmn:userTask>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Bank_transaction">
+      <bpmndi:BPMNEdge id="Flow_02afr0i_di" bpmnElement="Flow_02afr0i">
+        <di:waypoint x="690" y="117" />
+        <di:waypoint x="752" y="117" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_10x4iic_di" bpmnElement="Flow_10x4iic">
+        <di:waypoint x="530" y="117" />
+        <di:waypoint x="590" y="117" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1yumj0r_di" bpmnElement="Flow_1yumj0r">
+        <di:waypoint x="370" y="117" />
+        <di:waypoint x="430" y="117" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0hqv7qv_di" bpmnElement="Flow_0hqv7qv">
+        <di:waypoint x="215" y="117" />
+        <di:waypoint x="270" y="117" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="179" y="99" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1j491a7_di" bpmnElement="Event_1j491a7">
+        <dc:Bounds x="752" y="99" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_160k2zt_di" bpmnElement="Activity_0pih2vw">
+        <dc:Bounds x="270" y="77" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1ugezbx_di" bpmnElement="Activity_07e3c3d">
+        <dc:Bounds x="430" y="77" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1f1f318_di" bpmnElement="Activity_1313pj3">
+        <dc:Bounds x="590" y="77" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

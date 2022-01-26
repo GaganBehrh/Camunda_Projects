@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 2,
+  "components": [
+    {
+      "label": "Where would you like to go for Shopping?",
+      "type": "textfield",
+      "id": "Field_0tk4gtp",
+      "key": "Shopping"
+    },
+    {
+      "values": [
+        {
+          "label": "Bahnhofstrasse",
+          "value": "Bahnhofstrasse"
+        },
+        {
+          "label": "Altstetten",
+          "value": "Altstetten"
+        }
+      ],
+      "label": "Shopping Spots",
+      "type": "radio",
+      "id": "Field_13lqdss",
+      "key": "ShoppingSpots"
+    },
+    {
+      "values": [
+        {
+          "label": "H&M",
+          "value": "H&M"
+        },
+        {
+          "label": "C&A",
+          "value": "C&A"
+        }
+      ],
+      "label": "Shopping Centres",
+      "type": "radio",
+      "id": "Field_1x1hprm",
+      "key": "field_0ivb98q"
+    },
+    {
+      "action": "submit",
+      "label": "Proceed",
+      "type": "button",
+      "id": "Field_0kjyxie",
+      "key": "field_00hcgdb"
+    }
+  ],
+  "type": "default",
+  "id": "Form_151pz55"
+}

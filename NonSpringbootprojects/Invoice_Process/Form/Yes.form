@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "components": [
+    {
+      "text": "The Invoice is approved",
+      "type": "text",
+      "id": "Field_0f1ol7h"
+    }
+  ],
+  "type": "default",
+  "id": "Form_0inbad3"
+}

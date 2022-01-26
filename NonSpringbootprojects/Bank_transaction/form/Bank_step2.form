@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 2,
+  "components": [
+    {
+      "label": "FirstName",
+      "type": "textfield",
+      "id": "Field_0w2lbky",
+      "key": "FirstName"
+    },
+    {
+      "label": "LastName",
+      "type": "textfield",
+      "id": "Field_093zmxn",
+      "key": "LastName"
+    },
+    {
+      "values": [
+        {
+          "label": "CreditCard",
+          "value": "CreditCard"
+        },
+        {
+          "label": "DebitCard",
+          "value": "DebitCard"
+        }
+      ],
+      "label": "Type of Card",
+      "type": "radio",
+      "id": "Field_1vyzhqn",
+      "key": "field_00otx06",
+      "validate": {
+        "required": false
+      }
+    },
+    {
+      "action": "submit",
+      "label": "Submit",
+      "type": "button",
+      "id": "Field_1wdem6j",
+      "key": "field_0pl3b1s"
+    }
+  ],
+  "type": "default",
+  "id": "Form_1n00tnz"
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 2,
+  "components": [
+    {
+      "label": "Bank Name",
+      "type": "textfield",
+      "id": "Field_14ylfv0",
+      "key": "BankName",
+      "description": "What is the name of ur Bank?"
+    },
+    {
+      "values": [
+        {
+          "label": "Yes",
+          "value": "Yes"
+        },
+        {
+          "label": "No",
+          "value": "No"
+        }
+      ],
+      "label": "Are you above 18?",
+      "type": "radio",
+      "id": "Field_1dogvli",
+      "key": "field_08f5kzp"
+    },
+    {
+      "action": "submit",
+      "label": "Submit",
+      "type": "button",
+      "id": "Field_0od2ogp",
+      "key": "field_0vhmo4z"
+    }
+  ],
+  "type": "default",
+  "id": "Form_0r8qwde"
+}

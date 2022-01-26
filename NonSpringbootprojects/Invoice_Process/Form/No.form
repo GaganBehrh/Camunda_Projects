@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "components": [
+    {
+      "text": "Your request has not been approved",
+      "type": "text",
+      "id": "Field_1rol26e"
+    }
+  ],
+  "type": "default",
+  "id": "Form_0ycac53"
+}

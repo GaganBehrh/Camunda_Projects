@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 2,
+  "components": [
+    {
+      "label": "Rechnung_No",
+      "type": "textfield",
+      "id": "Field_11l8akp",
+      "key": "field_1va6rti"
+    },
+    {
+      "label": "Name of the company",
+      "type": "textfield",
+      "id": "Field_1pw5cvi",
+      "key": "field_01myize"
+    },
+    {
+      "label": "Name of the Invoicee",
+      "type": "textfield",
+      "id": "Field_0dp8d4k",
+      "key": "field_0iqjnk1"
+    },
+    {
+      "values": [
+        {
+          "label": "ManagerA",
+          "value": "ManagerA"
+        },
+        {
+          "label": "ManagerB",
+          "value": "ManagerB"
+        }
+      ],
+      "label": "Manager",
+      "type": "select",
+      "id": "Field_1gpu5l6",
+      "key": "Manager",
+      "description": "Which Manager would you like to assign this duty to?"
+    },
+    {
+      "label": "Amount",
+      "type": "number",
+      "id": "Field_1iedub5",
+      "key": "field_0hrn9qf"
+    },
+    {
+      "label": "Due Date",
+      "type": "textfield",
+      "id": "Field_0wq9cwa",
+      "key": "field_10mnw0z"
+    },
+    {
+      "values": [
+        {
+          "label": "Yes",
+          "value": "Yes"
+        },
+        {
+          "label": "No",
+          "value": "No"
+        }
+      ],
+      "label": "Can you pay the bill befiore the Due Date?",
+      "type": "radio",
+      "id": "Field_0vxsuun",
+      "key": "field_11oiges"
+    },
+    {
+      "action": "submit",
+      "label": "Proceed",
+      "type": "button",
+      "id": "Field_0p268d9",
+      "key": "field_1n07sim"
+    }
+  ],
+  "type": "default",
+  "id": "Form_0u9qxov"
+}
