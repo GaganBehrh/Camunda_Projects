@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "components": [
+    {
+      "label": "Rate of Interest",
+      "type": "number",
+      "id": "Field_0hjak4m",
+      "key": "interestRate"
+    },
+    {
+      "values": [
+        {
+          "label": "Yes",
+          "value": "Yes"
+        },
+        {
+          "label": "No",
+          "value": "No"
+        }
+      ],
+      "label": "Do you Approve?",
+      "type": "radio",
+      "id": "Field_0tindg6",
+      "key": "answer",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_02449j6"
+}
