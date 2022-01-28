@@ -7,14 +7,14 @@
       "id": "Field_01w4ddm",
       "key": "field_1dy6hua",
       "validate": {
-        "required": true
+        "required": false
       }
     },
     {
-      "label": "LastName",
+      "label": "Amount",
       "type": "textfield",
       "id": "Field_18zdaig",
-      "key": "field_0su6u00",
+      "key": "Amount",
       "validate": {
         "required": true
       }
@@ -43,16 +43,16 @@
       "id": "Field_078epvz",
       "key": "field_0nm0v3y",
       "validate": {
-        "required": true
+        "required": false
       }
     },
     {
-      "label": "Date_of_Birtth",
+      "label": "Date_of_Birth",
       "type": "number",
       "id": "Field_1kg9vij",
       "key": "field_0z2j45j",
       "validate": {
-        "required": true
+        "required": false
       }
     },
     {
@@ -61,7 +61,7 @@
       "id": "Field_1kcz2t5",
       "key": "field_0viqfgg",
       "validate": {
-        "required": true
+        "required": false
       }
     },
     {
@@ -69,6 +69,25 @@
       "type": "textfield",
       "id": "Field_1svs2vu",
       "key": "field_0muoo3r"
+    },
+    {
+      "values": [
+        {
+          "label": "Yes",
+          "value": "Yes"
+        },
+        {
+          "label": "No",
+          "value": "No"
+        }
+      ],
+      "label": "Are all details ok?",
+      "type": "radio",
+      "id": "Field_1lwetzv",
+      "key": "answer",
+      "validate": {
+        "required": true
+      }
     },
     {
       "action": "submit",
@@ -79,5 +98,7 @@
     }
   ],
   "type": "default",
-  "id": "Form_0rdjphk"
+  "id": "Form_0rdjphk",
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.16"
 }

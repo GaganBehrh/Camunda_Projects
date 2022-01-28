@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="LoanStudygen" name="ABC" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.11.1">
+  <decision id="LoanStudylocal" name="LoanStudylocal">
+    <decisionTable id="DecisionTable_0rw8lm7">
+      <input id="InputClause_0ibnrje">
+        <inputExpression id="LiteralExpression_1g9negc" typeRef="double">
+          <text>Amount</text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_0soteb2" name="Rate of Interest(%)" typeRef="integer" />
+      <rule id="DecisionRule_0duelnw">
+        <inputEntry id="UnaryTests_1m2j8ws">
+          <text>5000</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1fstu6b">
+          <text>0.5</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_09brfod">
+        <inputEntry id="UnaryTests_1vv6bw8">
+          <text>10000</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1itoafm">
+          <text>1</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0jr7y7p">
+        <inputEntry id="UnaryTests_0o3vpak">
+          <text>20000</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0gfp85b">
+          <text>1.5</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1hksgj7">
+        <inputEntry id="UnaryTests_0ryn12f">
+          <text>30000</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0nnyi8x">
+          <text>2</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0i7anng">
+        <inputEntry id="UnaryTests_1jx9zuy">
+          <text>40000</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ndnmyx">
+          <text>3</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape id="DMNShape_10ixzye" dmnElementRef="LoanStudylocal">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
