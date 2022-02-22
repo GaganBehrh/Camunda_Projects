@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "components": [
+    {
+      "label": "Name of the Employee",
+      "type": "textfield",
+      "id": "Field_1k263ne",
+      "key": "field_0v1yf65"
+    },
+    {
+      "label": "Number of Days of vacation",
+      "type": "number",
+      "id": "Field_0j2r5hg",
+      "key": "days"
+    }
+  ],
+  "type": "default",
+  "id": "Form_0eqgay1"
+}
