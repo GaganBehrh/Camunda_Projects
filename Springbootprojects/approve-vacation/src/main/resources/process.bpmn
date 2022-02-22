@@ -33,7 +33,7 @@
       <bpmn:incoming>Flow_0x5c4pd</bpmn:incoming>
       <bpmn:outgoing>Flow_07ygf7f</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:userTask id="Activity_1q8hfvw" name="Rejection" camunda:formKey="camunda-forms:/forms/Acceptance.form">
+    <bpmn:userTask id="Activity_1q8hfvw" name="Rejection" camunda:formKey="camunda-forms:/forms/Rejection.form">
       <bpmn:incoming>Flow_092td67</bpmn:incoming>
       <bpmn:outgoing>Flow_1va3kgu</bpmn:outgoing>
     </bpmn:userTask>
